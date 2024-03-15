@@ -165,7 +165,7 @@ function Header() {
                     About
                   </NavHashLink>
                 </NavItem>
-                <NavItem className={styles['nav-items']}>
+                {/* <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
                     // to="/events#events"
@@ -198,7 +198,7 @@ function Header() {
                   >
                     Matches
                   </NavHashLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
@@ -354,7 +354,7 @@ function Header() {
                     Sponsors
                   </NavHashLink>
                 </NavItem>               
-                <NavItem className={styles['nav-items']}>
+                {/* <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
                     to="/team#team"
@@ -385,7 +385,7 @@ function Header() {
                   >
                     Teams
                   </NavHashLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"

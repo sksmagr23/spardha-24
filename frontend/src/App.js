@@ -10,7 +10,7 @@ import NotFound from './components/LandingPages/NotFound/NotFound';
 // import { Carousel } from 'react-responsive-carousel';
 import ShowTable from './components/LandingPages/UserData/ShowTable';
 import ShowallTable from './components/LandingPages/UserData/ShowallTable';
-import { AllGameFixtures } from './components/LandingPages/UserData/AllGameFixtures';
+// import { AllGameFixtures } from './components/LandingPages/UserData/AllGameFixtures';
 
 const LandingPages = React.lazy(() =>
   import('./components/LandingPages/LandingPages')
@@ -78,7 +78,7 @@ const HomePage = React.lazy(() =>
   import('./components/LandingPages/Home/HomePage/Home')
 );
 const Footer1 = React.lazy(() =>
-  import('./components/LandingPages/Footer/Footer')
+  import('./components/LandingPages/Contact/Contact.js')
 );
 const Matches =React.lazy(()=>
   import('./components/LandingPages/matches/matches')
@@ -289,14 +289,15 @@ function App() {
               </Suspense>
             }
           />
-           <Route
+
+           {/* <Route
             path="admin/allgames"
             element={
               <Suspense fallback={<Spinner />}>
                 <AllGameFixtures />
               </Suspense>
             }
-          />
+          /> */}
 
           <Route
             path="admin/allusers"

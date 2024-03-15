@@ -1,10 +1,10 @@
 import React from 'react';
-
 import './Home.css';
 import Mid from '../MiddleSection/MiddleSection';
 import Carousel from '../Carousel/Carouselhp';
+import CountdownTimer from '../Countdown/Countdown'
 /*import Foot from '../HomeBottom/HomeBottom';*/
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 
 function App() {
   
@@ -19,11 +19,11 @@ function App() {
           
           <div>
             <Mid />
-            <Footer/>
+            {/* <Footer/> */}
           </div>
           <div>
             {/*<Foot />*/}
-            {/* <CountdownTimer/> */}
+            <CountdownTimer/>
           </div>
         </div>
       </div>

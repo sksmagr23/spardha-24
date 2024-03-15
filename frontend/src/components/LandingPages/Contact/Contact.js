@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styles from './Contact.module.css';
 import Carousel from '../Home/Carousel/Carouselhp';
 
 
 
-const Footer = () => {
+const Contact = () => {
   return (
     <>
       <section id="contactus">
@@ -119,4 +119,4 @@ const Footer = () => {
     </>
   );
 };
-export default Footer;
+export default Contact;
