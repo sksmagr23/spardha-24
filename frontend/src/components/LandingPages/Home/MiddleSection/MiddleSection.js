@@ -9,7 +9,7 @@ function Mid() {
 
       <div className="container-home">
         <div className="left-box">
-          <div className="heading1">SPARDHA 2023 <br />
+          <div className="heading1">SPARDHA 2024 <br />
           <div className='subheading1'>MOULDING CHAMPIONS</div></div>
           <div className="description">Annual sports festival of IIT (BHU) under the Games and Sports Council.</div>
 
