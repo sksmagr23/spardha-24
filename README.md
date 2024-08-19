@@ -3,7 +3,7 @@
 <img height="200px" src="https://user-images.githubusercontent.com/78701055/155994640-18c37b08-f6dc-493b-8116-c8b46f94a46b.png" alt="Loading img..."/>
 <!-- <img height="200px"  src="https://user-images.githubusercontent.com/78701055/155997992-04602a01-5dd9-41c3-a563-597fabf7d8d1.jpg" alt="Loading img..."/> -->
 </p>
-<h1 align="center"> Spardha'23 </h1>
+<h1 align="center"> Spardha'24 </h1>
 
 Spardha is the annual sports festival of IIT (BHU), Varanasi. In its glorious history of over 36 years, Spardha has grown to become the largest and one of the most awaited sports festivals of northern India, where athletic competition is drawn from throughout the country.
 
