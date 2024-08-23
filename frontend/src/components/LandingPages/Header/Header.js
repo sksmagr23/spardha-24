@@ -14,14 +14,12 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 import styles from './Header.module.css';
-// import { isMobile } from 'react-device-detect';
 import { useMediaQuery } from 'react-responsive';
 
 function Header() {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 993});
-  //const [home,setHome]=useState(true);
   const [active,setActive]=useState(false);
 
   useEffect(() => {
@@ -106,15 +104,7 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color: isActive
-                    //       ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
+
                     style={({ isActive }) => {
                     
                       return {
@@ -139,16 +129,7 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     // : isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
+                   
                     style={({ isActive }) => {
                       if(isActive){setActive(true)}
                       return {
@@ -208,16 +189,6 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     // : isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
                     style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
@@ -241,16 +212,6 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     // : isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
                     style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
@@ -266,58 +227,7 @@ function Header() {
                     ESPARDHA
                   </NavHashLink>
                 </NavItem>
-                {/* <NavItem className={styles['nav-items']}>
-                  <a
-                    href="/pdf/RuleBook.pdf"
-                    target="_blank"
-                    className={styles['nav-links']}
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                    style={{
-                      color: isMobile
-                        ? '#000'
-                        : navbar
-                        ? '#000'
-                        : 'rgba(255, 255, 255, 0.9)',
-                    }}
-                  >
-                    RuleBook
-                  </a>
-                </NavItem> */}
-                {/* <NavItem className={styles['nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="/guests#guests"
-                    className={styles['nav-links']}
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     // : isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
-                    style={({ isActive }) => {
-                      return {
-                        color: isMobile
-                          ? '#000'
-                          : navbar
-                          ? '#000'
-                          : 'rgba(255, 255, 255, 0.9)',
-                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
-                        };
-                    }}
-                    smooth
-                  >
-                    Guests
-                  </NavHashLink>
-                </NavItem> */}
+
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
@@ -327,18 +237,6 @@ function Header() {
                       setOpen(false);
 
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     //  :isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //     borderBottom:isActive
-                    //     ? "3px solid red;",
-                    //   };
-                    // }}
                     style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
@@ -354,38 +252,7 @@ function Header() {
                     Sponsors
                   </NavHashLink>
                 </NavItem>               
-                {/* <NavItem className={styles['nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="/team#team"
-                    className={styles['nav-links']}
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color: isActive
-                    //       ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
-                    style={({ isActive }) => {if(isActive){setActive(true)}
-                      return {
-                        color: isMobile
-                          ? '#000'
-                          : navbar
-                          ? '#000'
-                          : 'rgba(255, 255, 255, 0.9)',
-                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
-                        };
-                    }}
-                    smooth
-                  >
-                    Teams
-                  </NavHashLink>
-                </NavItem> */}
+                
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"

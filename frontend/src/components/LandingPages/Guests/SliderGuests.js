@@ -6,10 +6,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const SliderGuests = () => {
   return (
-    // <section id="testimonials">
-    //   SliderGuests
-    // </section>
-
     <section id="testimonials" className="testimony-section">
       <div className="overlay"></div>
       <div className="container_slider">
@@ -40,8 +36,6 @@ const SliderGuests = () => {
               autoplay
               center={true}
               className="mine_slider_guests"
-              // stagePadding={500}
-              // margin="1px"
             >
               <div className="item">
                 <div className="testimony-wrap text-center py-4">
@@ -57,20 +51,6 @@ const SliderGuests = () => {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="item">
-                <div className="testimony-wrap text-center py-4">
-                  <div className="user-img mt-3 mb-4 bg_class_guest8"></div>
-                  <div className="text p-3">
-                    <p className="mb-4">
-                      Salute to all organisers for such dedication and
-                      determination.
-                    </p>
-                    <p className="name">Sushil Kumar (Wrestler)</p>
-                    <span className="position">2010 World Title winner</span>
-                  </div>
-                </div>
-              </div> */}
 
               <div className="item">
                 <div className="testimony-wrap text-center py-4">
