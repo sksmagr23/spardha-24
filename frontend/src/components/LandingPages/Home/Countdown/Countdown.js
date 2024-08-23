@@ -6,7 +6,7 @@ class CountdownTimer extends Component {
     super(props);
 
     // Calculate the target date and time in IST (UTC+5:30)
-    this.targetDate = new Date("2024-10-14T00:00:00Z"); // UTC time
+    this.targetDate = new Date("2024-10-18T00:00:00Z"); // UTC time
     this.targetDate.setHours(this.targetDate.getHours() -5, this.targetDate.getMinutes()-30 );
 
     // Initialize the state with the initial time difference

@@ -11,15 +11,14 @@ function Register() {
   }, [navigate]);
 
   return (
-    <div className='bg'>
-          
-    <Carousel />
-    <div className={`${styles.container}`} id="register">
-      
-      <div className={`${styles.card}`}>
-        <Outlet />
+    <div className="bg">
+      <Carousel />
+      <div className={`${styles.container}`} id="register">
+        <div className={`${styles.card}`}>
+          <Outlet />
+        </div>
       </div>
-    </div></div>
+    </div>
   );
 }
 

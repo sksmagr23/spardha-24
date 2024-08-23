@@ -6,27 +6,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import GalleryModal from '../GalleryModal/GalleryModal';
-// import Background_gallery from '/images/bg/bg_football.png';
-
 const Gallery = () => {
-  // const gallery_bg={
-  //     backgroundImage:  "url(" + { Background_gallery } + ")",
-  //     backgroundAttachment: "fixed",
-  //     backgroundPosition: "center",
-  //     backgroundSize: "cover"
-  // }
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
   const [item, setItem] = useState(0);
-  // const changeIndex=(index)=>{
-  //   console.log("changeIndex",index);
-  //   setItem(index)
-  // };
   const [check, setCheck] = useState(false);
 
   useEffect(() => {
-    // console.log('useEffect', check);
     if (check) {
       if (!modal) {
         toggle();
@@ -63,7 +49,6 @@ const Gallery = () => {
               
             </div>
           </div>
-          {/* <hr style="margin-left: 30px; margin-right: 30px;"> */}
           <div className="tz-gallery">
             <div className="row_gallery mb-3 gallery-heading boldClass"  style={{ color: '#760e53'}}>
               Opening Ceremony
