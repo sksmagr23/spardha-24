@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { MdOutlineWatchLater, MdDateRange } from 'react-icons/md';
 
 const MatchList = ({ matches }) => {
-  if(matches===undefined)
-  return (<></>)
+  if (matches === undefined) return <></>;
   return (
     <div className="match-list">
       {matches.map((match) => (
-        <MatchEntry key={match._id} match={match}/>
+        <MatchEntry key={match._id} match={match} />
       ))}
     </div>
   );
@@ -17,14 +16,14 @@ function MatchEntry({ match }) {
   const [detailsVisible, setDetailsVisible] = useState(false);
   const dateTime = new Date(match.game_start);
 
-// Extracting date
-const year = dateTime.getFullYear();
-const month = dateTime.getMonth() + 1; // Months are zero-based
-const day = dateTime.getDate();
+  // Extracting date
+  const year = dateTime.getFullYear();
+  const month = dateTime.getMonth() + 1; // Months are zero-based
+  const day = dateTime.getDate();
 
-// Extracting time
-const hours = dateTime.getUTCHours();
-const minutes = dateTime.getUTCMinutes();
+  // Extracting time
+  const hours = dateTime.getUTCHours();
+  const minutes = dateTime.getUTCMinutes();
   return (
     <div className="match-item">
       <div className="match-details">
@@ -37,7 +36,7 @@ const minutes = dateTime.getUTCMinutes();
           <div><BiLocationPlus /></div>
         </div> */}
         <div className="match-time">
-          <div>{hours+":"+minutes}</div>
+          <div>{hours + ':' + minutes}</div>
           <div>
             <MdOutlineWatchLater />
           </div>

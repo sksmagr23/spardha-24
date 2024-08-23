@@ -25,9 +25,7 @@ const About = React.lazy(() => import('./components/LandingPages/About/About'));
 const Events = React.lazy(() =>
   import('./components/LandingPages/Events/Events')
 );
-const Admin = React.lazy(() =>
-  import('./components/DashBoard/Admin/Admin')
-);
+const Admin = React.lazy(() => import('./components/DashBoard/Admin/Admin'));
 const Team = React.lazy(() => import('./components/LandingPages/Team/Team'));
 const Sponsors = React.lazy(() =>
   import('./components/LandingPages/Sponsors/Sponsors')
@@ -63,7 +61,9 @@ const Home = React.lazy(() => import('./components/DashBoard/Home/Home'));
 const Registration = React.lazy(() =>
   import('./components/DashBoard/Registration/Registration')
 );
-const Document = React.lazy(() => import('./components/DashBoard/Document/Document'));
+const Document = React.lazy(() =>
+  import('./components/DashBoard/Document/Document')
+);
 
 const Profile = React.lazy(() =>
   import('./components/DashBoard/Profile/Profile')
@@ -80,10 +80,10 @@ const HomePage = React.lazy(() =>
 const Footer1 = React.lazy(() =>
   import('./components/LandingPages/Contact/Contact.js')
 );
-const Matches =React.lazy(()=>
+const Matches = React.lazy(() =>
   import('./components/LandingPages/matches/matches')
 );
-const Espardha =React.lazy(()=>
+const Espardha = React.lazy(() =>
   import('./components/LandingPages/Espardha/Espardha')
 );
 
@@ -111,7 +111,7 @@ function App() {
             </Suspense>
           }
         >
-           <Route
+          <Route
             path="/"
             element={
               <Suspense fallback={<Spinner />}>
@@ -141,7 +141,6 @@ function App() {
               element={
                 <Suspense fallback={<Preloader />}>
                   <Signup />
-                  
                 </Suspense>
               }
             />
@@ -172,7 +171,7 @@ function App() {
                 </Suspense>
               }
             />
-            
+
             <Route
               exact
               path="verify"
@@ -195,7 +194,7 @@ function App() {
             path="espardha"
             element={
               <Suspense fallback={<Preloader />}>
-                <Espardha/>
+                <Espardha />
               </Suspense>
             }
           />
@@ -272,25 +271,25 @@ function App() {
             }
           />
         </Route>
-        
+
         <Route
-          path="admin"  
+          path="admin"
           element={
             <Suspense fallback={<Preloader />}>
-              <Admin/>
+              <Admin />
             </Suspense>
           }
-          />
-          <Route
-            path="admin/showtable"
-            element={
-              <Suspense fallback={<Spinner />}>
-                <ShowTable />
-              </Suspense>
-            }
-          />
+        />
+        <Route
+          path="admin/showtable"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <ShowTable />
+            </Suspense>
+          }
+        />
 
-           {/* <Route
+        {/* <Route
             path="admin/allgames"
             element={
               <Suspense fallback={<Spinner />}>
@@ -299,14 +298,14 @@ function App() {
             }
           /> */}
 
-          <Route
-            path="admin/allusers"
-            element={
-              <Suspense fallback={<Spinner />}>
-                <ShowallTable />
-              </Suspense>
-            }
-          />
+        <Route
+          path="admin/allusers"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <ShowallTable />
+            </Suspense>
+          }
+        />
         <Route
           path="/dashboard"
           element={
@@ -347,7 +346,7 @@ function App() {
               </Suspense>
             }
           />
-        
+
           <Route
             path="events"
             element={
@@ -364,7 +363,6 @@ function App() {
               </Suspense>
             }
           />
-         
         </Route>
       </Routes>
       {/* </Router> */}

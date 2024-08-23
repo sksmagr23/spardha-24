@@ -6,7 +6,9 @@ const Sidebar = ({ sports, onSelectSport, selectedSport }) => {
       {sports.map((sport) => (
         <div
           key={sport}
-          className={`sidebar-icon ${sport === selectedSport ? 'selected' : ''}`}
+          className={`sidebar-icon ${
+            sport === selectedSport ? 'selected' : ''
+          }`}
           onClick={() => onSelectSport(sport)}
         >
           {sport}
