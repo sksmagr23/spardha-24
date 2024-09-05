@@ -190,16 +190,6 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   return {
-                    //     color
-                    //     // : isActive
-                    //     //   ? '#6db549'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //   };
-                    // }}
                     style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
@@ -236,6 +226,16 @@ function Header() {
                     //     borderBottom: isMobile ? '1px solid black' : isActive ? '3px solid #4982F6' : null,
                     //   };
                     // }}
+                    style={({ isActive }) => {if(isActive){setActive(true)}
+                      return {
+                        color: isMobile
+                          ? '#000'
+                          : navbar
+                          ? '#000'
+                          : 'rgba(255, 255, 255, 0.9)',
+                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
+                        };
+                    }}
                     smooth
                   >
                     Events
@@ -377,10 +377,7 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    style={({ isActive }) => {
-                      if (isActive) {
-                        setActive(true);
-                      }
+                    style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
                           ? '#000'
