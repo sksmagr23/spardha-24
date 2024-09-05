@@ -15,8 +15,8 @@ import { useMediaQuery } from 'react-responsive';
 function Header() {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const isMobile = useMediaQuery({ maxWidth: 993 });
-  const [active, setActive] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 993});
+  const [active,setActive]=useState(false);
 
   useEffect(() => {
     const scrollListener = document.addEventListener('scroll', () => {
@@ -215,17 +215,6 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    // style={({ isActive }) => {
-                    //   if (isActive) setActive(true);
-                    //   return {
-                    //     color: isMobile
-                    //       ? '#000'
-                    //       : navbar
-                    //       ? '#000'
-                    //       : 'rgba(255, 255, 255, 0.9)',
-                    //     borderBottom: isMobile ? '1px solid black' : isActive ? '3px solid #4982F6' : null,
-                    //   };
-                    // }}
                     style={({ isActive }) => {if(isActive){setActive(true)}
                       return {
                         color: isMobile
@@ -345,29 +334,6 @@ function Header() {
                     </li>
                   </ul>
                 </NavItem>
-                {/* <NavItem className={styles['nav-items']}>
-                  <NavHashLink
-                    exact="true"
-                    to="/espardha#espardha"
-                    className={styles['nav-links']}
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                    style={({ isActive }) => {if(isActive){setActive(true)}
-                      return {
-                        color: isMobile
-                          ? '#000'
-                          : navbar
-                          ? '#000'
-                          : 'rgba(255, 255, 255, 0.9)',
-                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid #4982F6' : null,
-                        };
-                    }}
-                    smooth
-                  >
-                    ESPARDHA
-                  </NavHashLink>
-                </NavItem> */}
 
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
@@ -395,8 +361,8 @@ function Header() {
                   >
                     Sponsors
                   </NavHashLink>
-                </NavItem>
-
+                </NavItem>               
+                
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
