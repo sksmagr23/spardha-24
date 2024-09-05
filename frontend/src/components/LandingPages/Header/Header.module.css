@@ -145,20 +145,30 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0px; 
+  bottom: 0px;
   width: 100%;
   height: 2px;
   background-color: transparent;
 }
 
 .dropdown-link:hover::after {
-  background-color: #4982F6; 
-  height: 3px; 
+  background-color: #4982f6;
+  height: 3px;
 }
 
 .nav-items:hover .dropdown-menu {
   display: block;
 }
+.nav-items .dropdown-icon {
+  transition: transform 0.1s ease;
+  transform: rotate(180deg);
+}
+
+.nav-items:hover .dropdown-icon,
+.dropdown-menu:hover .dropdown-icon {
+  transform: rotate(0deg);
+}
+
 @media only screen and (min-width: 776px) {
   .wrap-container {
     padding: 10px 14px 5px 0px !important;

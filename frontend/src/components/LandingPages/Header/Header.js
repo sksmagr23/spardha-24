@@ -46,8 +46,9 @@ function Header() {
         fixed="top"
         style={{
           backgroundColor: '#16171A',
-          borderBottom: '2px solid #303030',
-          borderRadius: '5px',
+          borderBottom: '1px solid #303030',
+          borderBottomLeftRadius: '20px',
+          borderBottomRightRadius: '20px',
         }}
       >
         <div className="nav-contain" style={{ display: 'flex' }}>
@@ -239,12 +240,17 @@ function Header() {
                   >
                     Events
                     <svg
+                      className={styles['dropdown-icon']}
                       width="12px"
                       height="9.43px"
                       viewBox="0 0 10 7"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      style={{ left : '919px', bottom: '68.57px' }}
+                      style={{
+                        marginLeft: '2px',
+                        left: '919px',
+                        bottom: '68.57px',
+                      }}
                     >
                       <path
                         d="M4.19416 0.66795C4.59377 0.124132 5.40624 0.124133 5.80584 0.667951L9.02624 5.05058C9.51152 5.711 9.03994 6.64272 8.2204 6.64272H1.7796C0.960062 6.64272 0.488485 5.711 0.973765 5.05058L4.19416 0.66795Z"
@@ -295,7 +301,6 @@ function Header() {
                       </NavHashLink>
                     </li>
                     <li>
-                      
                       <NavHashLink
                         exact="true"
                         to="/espardha#espardha"
