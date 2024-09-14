@@ -256,7 +256,7 @@ const Hockey = (props) => {
 const Kabbadi = (props) => {
   return (
     <EventCard
-      captainsArray={[new Person("Peddinti Sai Siva Kumar (M)", "7569965571", "peddinti.saiskumar.cer19@itbhu.ac.in"), new Person("Kodurupaka Mallika (W)", "6302471817", "kodurupaka.mallika.mec21@itbhu.ac.in")]}
+      captainsArray={[new Person("Banoth Devender (M)", "8341367106", "N/A"), new Person("Anuska (W)", "N/A", "N/A")]}
       imageSrc={kabaddi}
       eventName="Kabbadi"
       rulebookPDF={KabbadiPDF}
