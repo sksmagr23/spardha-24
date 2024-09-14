@@ -15,8 +15,8 @@ import { useMediaQuery } from 'react-responsive';
 function Header() {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const isMobile = useMediaQuery({ maxWidth: 993});
-  const [active,setActive]=useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 993 });
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     const scrollListener = document.addEventListener('scroll', () => {
@@ -56,7 +56,7 @@ function Header() {
             <NavHashLink exact="true" to="/" smooth>
               <img
                 src={`/images/logo/spardha-logo-${
-                  navbar ? (isMobile ? 'white' : 'black') : 'white'
+                  navbar ? (isMobile ? 'white' : 'white') : 'white'
                 }.png`}
                 alt="Sparhda Logo"
                 height="70px"
@@ -96,24 +96,25 @@ function Header() {
               <Nav navbar className={`ms-auto ${styles['navbar-nav']}`}>
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
-                    exact="true"
                     to="/"
                     className={styles['nav-links']}
                     onClick={() => {
                       setOpen(false);
                     }}
                     style={({ isActive }) => {
+                      const active =
+                        isActive && window.location.pathname === '/';
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
                         borderBottom: isMobile
                           ? '1px solid black'
                           : active
-                          ? 'none'
-                          : '3px solid #4982F6',
+                          ? '3px solid #4982F6'
+                          : null,
                       };
                     }}
                     smooth
@@ -121,6 +122,7 @@ function Header() {
                     Home
                   </NavHashLink>
                 </NavItem>
+
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
@@ -135,9 +137,9 @@ function Header() {
                       }
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
                         borderBottom: isMobile
                           ? '1px solid black'
@@ -165,9 +167,9 @@ function Header() {
                       }
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
                         borderBottom: isMobile
                           ? '1px solid black'
@@ -215,15 +217,15 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    style={({ isActive }) => {if(isActive){setActive(true)}
+                    style={() => {
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
-                          borderBottom:isMobile?'1px solid black': isActive ? '3px solid red' : null,
-                        };
+                        borderBottom: isMobile ? '1px solid black' : null,
+                      };
                     }}
                     smooth
                   >
@@ -260,9 +262,9 @@ function Header() {
                           if (isActive) setActive(true);
                           return {
                             color: isMobile
-                              ? '#000'
+                              ? 'black'
                               : navbar
-                              ? '#000'
+                              ? 'white'
                               : 'rgba(255, 255, 255, 0.9)',
                             borderBottom: isMobile
                               ? '3px solid black'
@@ -303,9 +305,9 @@ function Header() {
                           }
                           return {
                             color: isMobile
-                              ? '#000'
+                              ? 'black'
                               : navbar
-                              ? '#000'
+                              ? 'white'
                               : 'rgba(255, 255, 255, 0.9)',
                             borderBottom: isMobile
                               ? '3px solid black'
@@ -343,12 +345,15 @@ function Header() {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    style={({ isActive }) => {if(isActive){setActive(true)}
+                    style={({ isActive }) => {
+                      if (isActive) {
+                        setActive(true);
+                      }
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
                         borderBottom: isMobile
                           ? '1px solid black'
@@ -361,8 +366,8 @@ function Header() {
                   >
                     Sponsors
                   </NavHashLink>
-                </NavItem>               
-                
+                </NavItem>
+
                 <NavItem className={styles['nav-items']}>
                   <NavHashLink
                     exact="true"
@@ -377,9 +382,9 @@ function Header() {
                       }
                       return {
                         color: isMobile
-                          ? '#000'
+                          ? 'black'
                           : navbar
-                          ? '#000'
+                          ? 'white'
                           : 'rgba(255, 255, 255, 0.9)',
                         borderBottom: isMobile
                           ? '1px solid black'
@@ -411,9 +416,9 @@ function Header() {
                         }}
                         style={{
                           color: isMobile
-                            ? '#000'
-                            : navbar
-                            ? '#000'
+                            ? 'black'
+                              : navbar
+                              ? 'white'
                             : 'rgba(255, 255, 255, 0.9)',
                         }}
                         target="_blank"
@@ -433,9 +438,9 @@ function Header() {
                         }}
                         style={{
                           color: isMobile
-                            ? '#000'
-                            : navbar
-                            ? '#000'
+                            ? 'black'
+                              : navbar
+                              ? 'white'
                             : 'rgba(255, 255, 255, 0.9)',
                         }}
                         target="_blank"
@@ -454,9 +459,9 @@ function Header() {
                         }}
                         style={{
                           color: isMobile
-                            ? '#000'
-                            : navbar
-                            ? '#000'
+                            ? 'black'
+                              : navbar
+                              ? 'white'
                             : 'rgba(255, 255, 255, 0.9)',
                         }}
                         target="_blank"
