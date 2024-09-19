@@ -83,7 +83,7 @@ const EventCard = (props) => {
           <div className={`${styles.event_box_name}`}>{props.eventName}</div>
           <div className={`${styles.rule_book_box}`}>
             <div style={{
-              color: "#760E53",
+              color: "white",
               fontSize: 18,
               fontFamily: "Poppins",
               fontWeight: 600,
@@ -105,9 +105,9 @@ const PersonDetails = (props) => {
   return (
     <div className={`${styles.person_details}`}>
     <br />
-      <span className={`${styles.content_header}`}>{props.name}<br /></span>
-      <span className={`${styles.content}`}>{props.contact}<br /></span>
-      <span className={`${styles.content}`}>{props.email}<br /><br /></span>
+      <span className={`${styles.content_header}`}><span className='newwh'>{props.name}</span><br /></span>
+      <span><span className='newwh'>{props.contact}</span><br /></span>
+      <span><span className='newwh'>{props.email}</span><br /><br /></span>
     </div>
   );
 };
