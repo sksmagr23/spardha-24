@@ -21,6 +21,72 @@ const Sponsors = () => {
 
           <div className={styles.scrollablediv}>
 
+            <div className={`${styles.row}`}>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="0"
+
+              >
+                <a href="https://www.pw.live/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/2023/pw.png"
+                    alt=""
+                  />
+                </a>
+                {/* <p>PW</p> */}
+
+              </div>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="1"
+              >
+                <a href="https://www.ntpc.co.in/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/2018/ntpc.png"
+
+                    alt=""
+
+                  />
+                </a>
+                {/* <p>NTPC</p> */}
+              </div>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="2"
+                
+              >
+                <a href="https://www.asus.com/us/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="https://cdn.worldvectorlogo.com/logos/asus-logo.svg"
+                    alt=""
+                  />
+                </a>
+                {/* <p>Asus</p> */}
+
+              </div>
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="3"
+
+              >
+                <a href="https://www.dsgroup.com/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/2023/dspul.png"
+                    alt=""
+                  />
+                </a>
+                {/* <p>DS</p> */}
+
+              </div>
+
+            </div>
 
 
 
@@ -29,6 +95,53 @@ const Sponsors = () => {
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0"
+
+              >
+                <a href="https://unacademy.com/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/31/Unacademy-logo-official.svg"
+                    alt=""
+                  />
+                </a>
+                {/* <p>PW</p> */}
+
+              </div>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="1"
+              >
+                <a href="https://www.toyotabharat.com/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/2022/toyota.png"
+                    alt=""
+
+                  />
+                </a>
+                {/* <p>Toyota</p> */}
+              </div>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="2"
+                
+              >
+                <a href="https://nightwalkerglobal.com/">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/2023/nightwaler.png"
+                    alt=""
+                    style={{ mixBlendMode: 'color-burn'}}
+                  />
+                </a>
+                {/* <p>Nightwalker</p> */}
+
+              </div>
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="3"
 
               >
                 <a href="https://myrankers.com/">
@@ -40,6 +153,29 @@ const Sponsors = () => {
                 </a>
                 {/* <p>My Rankers</p> */}
 
+              </div>
+
+            </div>
+
+
+
+
+
+            <div className={`${styles.row}`}>
+
+              <div
+                className={`${styles.col_2} ${styles.padding} `}
+                id="0"
+              >
+                <a href="https://www.reebok.com/us">
+                  <img
+                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
+                    src="/images/sponsors/others/reebok.png"
+                    alt=""
+
+                  />
+                </a>
+                {/* <p>Reebok</p> */}
               </div>
 
               <div
@@ -61,7 +197,7 @@ const Sponsors = () => {
               <div
                 className={`${styles.col_2} ${styles.padding} `}
                 id="2"
-
+                
               >
                 <a href="https://amul.com/">
                   <img
@@ -96,23 +232,16 @@ const Sponsors = () => {
             <div className={`${styles.row}`}>
               <div
                 className={`${styles.col_2} ${styles.padding} `}
-                id="0"
+                id="1"
               >
-
-
-
-
-
-
-                <a href="https://www.toyotabharat.com/">
+                <a href="https://www.thesouledstore.com/">
                   <img
                     className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/2022/toyota.png"
+                    src="/images/sponsors/others/souledstore.png"
                     alt=""
 
-                  />
-                </a>
-                {/* <p>Toyota</p> */}
+                  />  </a>
+                {/* <p>The Souled Store</p> */}
               </div>
 
               <div
@@ -241,7 +370,7 @@ const Sponsors = () => {
                 <a href="https://spardha.org.in/sponsorus">
                   <img
                     className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/2022/Shri_rajbandhu.png"
+                    src="/images/sponsors/2022/shri_rajbandhu.png"
                     alt=""
 
                   />
@@ -518,15 +647,15 @@ const Sponsors = () => {
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0"
               >
-                <a href="https://www.reebok.com/us">
+                <a href="https://www.sitinetworks.com/">
                   <img
                     className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/others/reebok.png"
+                    src="/images/sponsors/others/siti.png"
                     alt=""
 
                   />
                 </a>
-                {/* <p>Reebok</p> */}
+                {/* <p>Siti Networks</p> */}
               </div>
 
               <div
@@ -597,16 +726,15 @@ const Sponsors = () => {
                 className={`${styles.col_2} ${styles.padding} `}
                 id="0"
               >
-                <a href="https://www.ntpc.co.in/">
+                <a href="https://sapphirewatches.com/">
                   <img
                     className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/2018/ntpc.png"
-
+                    src="/images/sponsors/others/sapphire.png"
                     alt=""
 
                   />
                 </a>
-                {/* <p>NTPC</p> */}
+                {/* <p>Sapphire Watches</p> */}
               </div>
 
               <div
@@ -1399,16 +1527,18 @@ const Sponsors = () => {
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
-                id="1"
+                id="2"
+
               >
-                <a href="https://www.amarujala.com/">
+                <a href="http://www.vmart.co.in/">
                   <img
                     className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/2022/AmarUjala.jpg"
-                    alt=""
+                    src="/images/sponsors/others/vmart.png"
+                    alt="" sors
+                  />
+                </a>
+                {/* <p>VMart</p> */}
 
-                  />  </a>
-                {/* <p>Amar Ujala</p> */}
               </div>
 
 
@@ -1808,20 +1938,6 @@ const Sponsors = () => {
 
             <div className={`${styles.row}`}>
 
-              <div
-                className={`${styles.col_2} ${styles.padding} `}
-                id="0"
-              >
-                <a href="https://sapphirewatches.com/">
-                  <img
-                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/others/sapphire.png"
-                    alt=""
-
-                  />
-                </a>
-                {/* <p>Sapphire Watches</p> */}
-              </div>
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
@@ -1877,22 +1993,9 @@ const Sponsors = () => {
             </div>
 
 
-            <div className={`${styles.row}`}>
+            {/* <div className={`${styles.row}`}>
 
-              <div
-                className={`${styles.col_2} ${styles.padding} `}
-                id="0"
-              >
-                <a href="https://www.sitinetworks.com/">
-                  <img
-                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/others/siti.png"
-                    alt=""
-
-                  />
-                </a>
-                {/* <p>Siti Networks</p> */}
-              </div>
+              
 
               <div
                 className={`${styles.col_2} ${styles.padding} `}
@@ -1905,28 +2008,14 @@ const Sponsors = () => {
                     alt=""
 
                   />  </a>
-                {/* <p>The Souled Store</p> */}
+                <p>The Souled Store</p>
               </div>
 
 
 
-              <div
-                className={`${styles.col_2} ${styles.padding} `}
-                id="2"
+              
 
-              >
-                <a href="http://www.vmart.co.in/">
-                  <img
-                    className={`${styles.img_responsive} ${styles.hvr_buzz_out} ${styles.grayscale}`}
-                    src="/images/sponsors/others/vmart.png"
-                    alt="" sors
-                  />
-                </a>
-                {/* <p>VMart</p> */}
-
-              </div>
-
-            </div>
+            </div> */}
 
 
           </div>
