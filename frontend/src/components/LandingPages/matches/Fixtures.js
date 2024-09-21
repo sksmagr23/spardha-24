@@ -22,7 +22,7 @@ const Fixtures = ({ selectedSport , selectedDate}) => {
         setLoading(false);
       });
   }, []);
-
+  
     const filterMatches =
     selectedSport === 'All'
       ? matchData
@@ -36,7 +36,7 @@ const Fixtures = ({ selectedSport , selectedDate}) => {
   return (
     <div className="Supreme">
       {loading ? (
-        <p>Loading data...</p>
+        <p style={{ color: 'white' }}>Loading data...</p>
       ) : (
         filteredMatches.map((data, index) => (
           <div className="displayBox" key={index}>
