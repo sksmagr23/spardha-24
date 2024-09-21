@@ -2,24 +2,24 @@
   width: 30.9375rem;
   height: 11.25rem;
   flex-shrink: 0;
-  background-color: #fff;
+  background-color: black;
   margin: 1.25rem;
   display: flex;
   flex-direction: column;
   padding: 15px 30px;
   border-radius: 1.25rem;
-  background: #fff;
-  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.05);
+  background: black;
+  box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.05);
 }
 .displayBox:hover {
   transform: scale(1.05);
   transition: 0.3s;
-  box-shadow: 0px 0px 1px 2px #760e53;
+  box-shadow: 0px 0px 1px 2px #4982F6;
 }
 .row1 {
   display: inline-flex;
   justify-content: space-between;
-  color: #760e53;
+  color: #4982F6;
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -28,7 +28,7 @@
 }
 .row2 {
   margin-top: 0.31rem;
-  color: #828282;
+  color: #989898;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -40,10 +40,10 @@
 }
 p {
   height: fit-content;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .x {
-  color: #000;
+  color: #ffffff;
   /* font-family: Poppins;
   font-size: 2.1875rem;
   font-style: normal;
@@ -56,7 +56,7 @@ p {
   width: 50px;
 }
 .score {
-  color: #760e53;
+  color: #4982F6;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
@@ -68,7 +68,7 @@ p {
   margin-top: 0.94rem;
   display: flex;
   flex-direction: row;
-  color: #760e53;
+  color: #4982F6;
   text-align: center;
   font-family: Poppins;
   font-size: 1.2rem;
@@ -83,7 +83,7 @@ p {
   height: 2.1875rem;
   /* flex-shrink: 0; */
   border-radius: 0.3125rem;
-  background: #d9d9d9;
+  background: #888686;
   margin-bottom: 0.63rem;
 }
 .row4 {
