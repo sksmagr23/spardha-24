@@ -16,9 +16,12 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
   /* width: 100vw; */
   /* my changes */
-  width: 100%;
+/*   width: 100%; */
+
 }
 
 .left-box {
