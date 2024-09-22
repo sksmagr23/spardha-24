@@ -43,7 +43,7 @@ import weightlifting from './image/weightlifting.png';
 import weightliftinghover from './image/weightliftinghover.png';
 import styles from './Events.module.css';
 import { Link } from 'react-router-dom';
-// import Carousel from '../Home/Carousel/Carouselhp';
+import Carousel from '../Home/Carousel/Carouselhp';
 import {
   Aquatics,
   Athletics,
@@ -677,9 +677,9 @@ const Events = () => {
   return (
     <div className='blk'>
     <section id="events" className={`${styles.ftco_section} ${styles.events}`}>
-      {/* <div className='bg'>
+      <div className='bg'>
         <Carousel />
-      </div> */}
+      </div>
       <div className={`${styles.container} ${styles.pb_1}`}>
         <div
           className={`${styles.row} ${styles.justify_content_center} ${styles.mb_5}`}
