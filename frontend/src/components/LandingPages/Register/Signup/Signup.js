@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import Footer from '../../Footer/footer';
+
 import {
   Alert,
   Button,
@@ -845,9 +845,7 @@ function Signup() {
       </Form>
     </motion.div>
     </div>
-    {/* <div style={{height:'30px'}}></div>
-      <Footer/>*/}
-      </div> 
+
   );
 }
 

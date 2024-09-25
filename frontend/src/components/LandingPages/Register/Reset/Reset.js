@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import axios from 'axios';
 import styles from '../Signup/Signup.module.css';
-// import Footer from '../../Footer/footer';
+
 import {
   Alert,
   Button,
@@ -274,8 +274,7 @@ function Reset() {
       </Form>
     </div>
     </div>
-    {/* <div style={{height:'30px'}}></div>
-      <Footer/> */}
+
     </div>
   );
 }
