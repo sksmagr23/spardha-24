@@ -4,7 +4,8 @@
   position: relative;
 }
 .bg{
-  position: fixed;}
+  position: fixed;
+}
 /* }
 .card {
   display: flex;
@@ -41,7 +42,7 @@
 }
 @media(max-width: 550px){
   .card{
-    width:90%;
+    width:100%;
     
   }
 }
