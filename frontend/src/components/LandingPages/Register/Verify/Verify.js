@@ -4,7 +4,7 @@ import { FaEnvelope, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useReducer } from 'react';
 import isEmail from 'validator/lib/isEmail';
-import Footer from '../../Footer/footer';
+
 import {
   Alert,
   Form,
@@ -223,8 +223,7 @@ function Verify() {
       </Form>
     </div>
     </div>
-    <div style={{height:'30px'}}></div>
-    <Footer></Footer>
+
     </div>
   );
 }
