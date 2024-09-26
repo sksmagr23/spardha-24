@@ -74,7 +74,7 @@ function Header() {
                 position: 'absolute',
                 right: isMobile ? '0' : '60px',
                 background: open ? '#16171A' : 'transparent',
-                width: isMobile ? '50%' : null,
+                width: isMobile ? '70%' : null,
                 alignItems: isMobile ? 'flex-start' : null,
                 display: isMobile ? 'flex' : null,
                 flexDirection: isMobile ? 'column' : null,
@@ -96,6 +96,7 @@ function Header() {
                 isOpen={open}
                 style={{
                   display: open ? null : 'none',
+                  width: '100%',
                 }}
               >
                 <Nav navbar className={`ms-auto ${styles['navbar-nav']}`}>
