@@ -247,16 +247,19 @@
     top: 4.5%;
     /* align-self: center; */
   }
+  .navbar-nav footer {
+    padding: 0 2% 0 2%;
+  }
   .navbar-nav footer img {
     padding-left: 18%;
     padding-right: 18%;
-    height: 55%;
-    width: 94%;
+    height: 50%;
+    width: 100%;
     justify-content: center;
     border-top: 2px solid white; /* First top border */
   }
   .navbar-nav footer div {
-    width: 94%;
+    width: 100%;
   }
   .nav-items {
     width: 100%;
