@@ -398,8 +398,6 @@ function Header() {
                             : isActive
                             ? '3px solid #4982F6'
                             : null,
-                          display: 'flex',
-                          alignItems: 'center',
                         };
                       }}
                       smooth
