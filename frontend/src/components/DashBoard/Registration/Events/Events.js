@@ -16,8 +16,8 @@ const EventsDb = () => {
   const [showModals, setShowModals] = useState({
     Athletics_B: false,
     Athletics_G: false,
-    Aquatics_B: false,
-    Aquatics_G: false,
+    // Aquatics_B: false,
+    // Aquatics_G: false,
     Badminton_B: false,
     Badminton_G: false,
     Basketball_B: false,
@@ -28,6 +28,7 @@ const EventsDb = () => {
     Cycling_M: false,
     Cricket_B: false,
     Football_B: false,
+    Football_G: false,
     Handball_B: false,
     Handball_G: false,
     Hockey_B: false,
@@ -49,7 +50,7 @@ const EventsDb = () => {
     Weightlifting_B: false,
   });
   const [Athletics_G, setAthletics_G] = useState({});
-  const [Aquatics_G, setAquatics_G] = useState({});
+  // const [Aquatics_G, setAquatics_G] = useState({});
   const [Boxing_G, setBoxing_G] = useState({});
   const [Taekwondo_G, setTaekwondo_G] = useState({});
   const [Volleyball_B, setVolleyball_B] = useState({});
@@ -71,6 +72,7 @@ const EventsDb = () => {
   const [Handball_B, setHandball_B] = useState({});
   const [Handball_G, setHandball_G] = useState({});
   const [Football_B, setFootball_B] = useState({});
+  const [Football_G, setFootball_G] = useState({});
   const [Cricket_B, setCricket_B] = useState({});
   const [Taekwondo_B, setTaekwondo_B] = useState({});
   const [Boxing_B, setBoxing_B] = useState({});
@@ -86,7 +88,7 @@ const EventsDb = () => {
 
   const inputFields = {
     Athletics_G: [Athletics_G, setAthletics_G],
-    Aquatics_G: [Aquatics_G, setAquatics_G],
+    // Aquatics_G: [Aquatics_G, setAquatics_G],
     Boxing_G: [Boxing_G, setBoxing_G],
     Taekwondo_G: [Taekwondo_G, setTaekwondo_G],
     Volleyball_B: [Volleyball_B, setVolleyball_B],
@@ -108,6 +110,7 @@ const EventsDb = () => {
     Handball_B: [Handball_B, setHandball_B],
     Handball_G: [Handball_G, setHandball_G],
     Football_B: [Football_B, setFootball_B],
+    Football_G: [Football_G, setFootball_G],
     Cricket_B: [Cricket_B, setCricket_B],
     Taekwondo_B: [Taekwondo_B, setTaekwondo_B],
     Boxing_B: [Boxing_B, setBoxing_B],
