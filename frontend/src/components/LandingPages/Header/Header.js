@@ -459,7 +459,7 @@ function Header() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         style={{
-                          marginRight: '5px',
+                          marginRight: '4px',
                           display: !isMobile ? 'none' : null,
                         }}
                       >
