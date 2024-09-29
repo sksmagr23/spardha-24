@@ -9,7 +9,7 @@
   text-transform: uppercase;
   color: #fff;
   font-family: 'Helvetica Compressed', Arial, sans-serif;
-  font-size: 22px;
+  font-size: 130%;
   font-style: normal;
   font-weight: 900;
   line-height: 70px; /* 233.333% */
@@ -203,7 +203,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 4vh;
-    margin: 0px 5px;
+    margin: 0px 5px 1px;
     border-bottom: 1px solid black;
     padding: 3px 38px 0 0;
     width: 100%;
@@ -277,15 +277,23 @@
     font-size: 120%;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1220px) {
   /* CSS styles for large desktops and monitors */
+  .nav-links {
+    font-size: 130%;
+  }
 }
 .icons_lower:hover {
   color: #4982f6;
 }
-@media (max-width: 1120px) {
+@media (min-width: 993px) and (max-width: 1024px) {
   .nav-links {
-    font-size: 120%;
+    font-size: 95%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1220px) {
+  .nav-links {
+    font-size: 100%;
   }
 }
 @media (max-width: 450px) {
@@ -298,7 +306,7 @@
 }
 @media (max-width: 370px) {
   .dropdown-menu {
-    min-width: 85%;
+    min-width: 90%;
   }
   .dropdown-link {
     font-size: 110%;
