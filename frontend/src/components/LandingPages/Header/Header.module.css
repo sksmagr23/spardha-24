@@ -303,6 +303,12 @@
   .dropdown-link {
     font-size: 115%;
   }
+  .navbar-nav footer img,
+  .navbar-nav footer div {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 90%;
+  }
 }
 @media (max-width: 370px) {
   .dropdown-menu {
@@ -310,6 +316,18 @@
   }
   .dropdown-link {
     font-size: 110%;
+  }
+  .navbar-nav footer img,
+  .navbar-nav footer div {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 90%;
+  }
+}
+@media (min-width: 630px) {
+  .navbar-nav footer img,
+  .navbar-nav footer div {
+    width: 80%;
   }
 }
 /* @media (max-width: 710px) {

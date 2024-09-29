@@ -17,7 +17,7 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 993 });
   const [, setActive] = useState();
-  const [events, setEvents] = useState(false);
+  // const [events, setEvents] = useState(false);
   const [dashboard, setDashboard] = useState(false);
 
   useEffect(() => {
@@ -74,7 +74,7 @@ function Header() {
                 position: 'absolute',
                 right: isMobile ? '0' : '60px',
                 background: open ? '#16171A' : 'transparent',
-                width: isMobile ? '70%' : null,
+                width: isMobile ? '60%' : null,
                 alignItems: isMobile ? 'flex-start' : null,
                 display: isMobile ? 'flex' : null,
                 flexDirection: isMobile ? 'column' : null,
