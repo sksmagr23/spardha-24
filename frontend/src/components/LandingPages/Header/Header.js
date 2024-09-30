@@ -564,14 +564,21 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/home.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           Home
                         </NavHashLink>
                       </li>
@@ -592,15 +599,22 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/registration.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           Registration
                         </NavHashLink>
                       </li>
@@ -621,15 +635,22 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/user-profile.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           User Profile
                         </NavHashLink>
                       </li>
@@ -652,15 +673,20 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/logout.png"
+                            alt="home-icon"
+                            style={{ marginRight: '4px' }}
+                          />
                           Logout
                         </NavHashLink>
                       </li>
