@@ -524,7 +524,23 @@ function Header() {
                       smooth
                     >
                       Dashboard
-                      <svg
+                      <img
+                        src="/images/icons/dropdown-icon.png"
+                        alt="dropdown arrow"
+                        className={styles['dropdown-icon']}
+                        width="7%"
+                        height="12px"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{
+                          marginLeft: '6px',
+                          left: '919px',
+                          bottom: '50.57px',
+                          opacity: '1.0',
+                        }}
+                      />
+                      {/* <svg
                         className={styles['dropdown-icon']}
                         width="12px"
                         height="9.43px"
@@ -541,7 +557,7 @@ function Header() {
                           d="M4.19416 0.66795C4.59377 0.124132 5.40624 0.124133 5.80584 0.667951L9.02624 5.05058C9.51152 5.711 9.03994 6.64272 8.2204 6.64272H1.7796C0.960062 6.64272 0.488485 5.711 0.973765 5.05058L4.19416 0.66795Z"
                           fill="#ffffff"
                         />
-                      </svg>
+                      </svg> */}
                     </NavHashLink>
                     <ul
                       className={styles['dropdown-menu']}
@@ -564,14 +580,21 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/home.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           Home
                         </NavHashLink>
                       </li>
@@ -592,15 +615,22 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/registration.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           Registration
                         </NavHashLink>
                       </li>
@@ -621,15 +651,22 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/user-profile.png"
+                            alt="home-icon"
+                            style={{
+                              marginRight: '4px',
+                            }}
+                          />
                           User Profile
                         </NavHashLink>
                       </li>
@@ -652,15 +689,20 @@ function Header() {
                                 ? 'white'
                                 : 'rgba(255, 255, 255, 0.9)',
                               borderBottom: isMobile
-                                ? '3px solid white'
+                                ? '1px solid white'
                                 : isActive
-                                ? '3px solid #4982F6'
+                                ? '1px solid #4982F6'
                                 : null,
                               display: !dashboard ? 'none' : null,
                             };
                           }}
                           smooth
                         >
+                          <img
+                            src="/images/icons/logout.png"
+                            alt="home-icon"
+                            style={{ marginRight: '4px' }}
+                          />
                           Logout
                         </NavHashLink>
                       </li>
