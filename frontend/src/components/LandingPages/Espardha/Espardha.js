@@ -88,7 +88,22 @@ const Espardha = () => {
                       </div>
                     </div>
                   </a>
-
+                  <a href="https://forms.gle/E4qDU2kADYZuLL7Z9" className={`${styles.formlink}`} target='blank'>
+                    <div className={`${styles.cardcon}`}>
+                      <div className={`${styles.cardimg}`}>
+                        <img src={bgmi} alt='BGMI Poster'></img>
+                      </div>
+                      <div className={`${styles.cardbottom}`}>
+                        <h4 style={{ fontWeight: "bold" }}> BGMI E-Spardha 2024</h4>
+                        <div className={`${styles.prizepool}`}><h6>Registration Fee: ₹ 110/Person</h6>
+                          <a href="https://forms.gle/E4qDU2kADYZuLL7Z9" className={`${styles.formlink}`} target='blank'>   <p> Register Here</p></a>
+                          <a href={bgmi_rulebook} className={`${styles.btnclass}`} download>
+                            Rulebook
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                   <a href="https://forms.gle/Ew8GVSMY1e2xCetr6" className={`${styles.formlink}`} target='blank'>
                     <div className={`${styles.cardcon}`}>
                       <div className={`${styles.cardimg}`}>
@@ -138,22 +153,7 @@ const Espardha = () => {
                     </div>
                   </a>
 
-                  <a href="https://forms.gle/E4qDU2kADYZuLL7Z9" className={`${styles.formlink}`} target='blank'>
-                    <div className={`${styles.cardcon}`}>
-                      <div className={`${styles.cardimg}`}>
-                        <img src={bgmi} alt='BGMI Poster'></img>
-                      </div>
-                      <div className={`${styles.cardbottom}`}>
-                        <h4 style={{ fontWeight: "bold" }}> BGMI E-Spardha 2024</h4>
-                        <div className={`${styles.prizepool}`}><h6>Registration Fee: ₹ 110/Person</h6>
-                          <a href="https://forms.gle/E4qDU2kADYZuLL7Z9" className={`${styles.formlink}`} target='blank'>   <p> Register Here</p></a>
-                          <a href={bgmi_rulebook} className={`${styles.btnclass}`} download>
-                            Rulebook
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+               
                 </div>
                 {/* my try end*/}
                 <div className={`${styles.bottom}`}>
