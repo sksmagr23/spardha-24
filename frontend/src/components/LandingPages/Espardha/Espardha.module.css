@@ -176,6 +176,7 @@ align-items: center;
 }
 .cardcon:hover{
   transform: scale(1.05);
+  transition-duration: 500ms;
 }
 .cardimg img{
  width:350px;
