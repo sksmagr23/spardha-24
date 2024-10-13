@@ -1,13 +1,20 @@
 import React from 'react';
 import styles from './Espardha.module.css';
 import Carousel from '../Home/Carousel/Carouselhp';
-import poster from './img/poster24.png';
+import poster from './img/poster24.jpg';
 import controler from './img/control.png';
 import pdf from './ESPARDHA24.pdf'
 import bgmi from "./img/bgmi.png"
+import road_to_valor from "./img/roadtovalor.png"
+import bullet_echo from "./img/bulletecho.png"
+import realcricket from "./img/realcricket.png"
 import { useState } from 'react';
 import valorent from './img/valorent.png'
+
 import bgmi_rulebook from './rulebook/BGMI_RULEBOOK.pdf'
+import realcricket_rulebook from './rulebook/Real_Cricket_rulebook.pdf'
+import road_to_valor_rulebook from './rulebook/Road_to_valor_rulebook.pdf'
+import bullet_echo_rulebook from './rulebook/Bullet_Echo_Rulebook.pdf'
 import valorant_rulebook from './rulebook/VALORANT_RULEBOOK.pdf'
 
 
@@ -97,6 +104,56 @@ const Espardha = () => {
                       </div>
                     </div>
                   </a>
+                  <a href="https://forms.gle/Ew8GVSMY1e2xCetr6" className={`${styles.formlink}`} target='blank'>
+                    <div className={`${styles.cardcon}`}>
+                      <div className={`${styles.cardimg}`}>
+                        <img src={bullet_echo} alt='Bullet Echo poster'></img>
+                      </div>
+                      <div className={`${styles.cardbottom}`}>
+                        <h4 style={{ fontWeight: "bold" }}>Bullet Echo E-Spardha  2024</h4>
+                        <div className={`${styles.prizepool}`}><h6>Registration Fee: Free</h6>
+                          <a href="https://forms.gle/Ew8GVSMY1e2xCetr6" className={`${styles.formlink}`} target='blank'>   <p> Register Here</p></a>
+                          <a href={bullet_echo_rulebook} className={`${styles.btnclass}`} download>
+                            Rulebook
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://forms.gle/BxqY8G1YXY45qMMN8" className={`${styles.formlink}`} target='blank'>
+                    <div className={`${styles.cardcon}`}>
+                      <div className={`${styles.cardimg}`}>
+                        <img src={road_to_valor} alt='Valorant poster'></img>
+                      </div>
+                      <div className={`${styles.cardbottom}`}>
+                        <h4 style={{ fontWeight: "bold" }}>Road To Valor E-Spardha  2024</h4>
+                        <div className={`${styles.prizepool}`}><h6>Registration Fee: Free</h6>
+                          <a href="https://forms.gle/BxqY8G1YXY45qMMN8" className={`${styles.formlink}`} target='blank'>   <p> Register Here</p></a>
+                          <a href={road_to_valor_rulebook} className={`${styles.btnclass}`} download>
+                            Rulebook
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://forms.gle/jHcXKDf5tSNLek386" className={`${styles.formlink}`} target='blank'>
+                    <div className={`${styles.cardcon}`}>
+                      <div className={`${styles.cardimg}`}>
+                        <img src={realcricket} alt='Valorant poster'></img>
+                      </div>
+                      <div className={`${styles.cardbottom}`}>
+                        <h4 style={{ fontWeight: "bold" }}>Real Cricket E-Spardha  2024</h4>
+                        <div className={`${styles.prizepool}`}><h6>Registration Fee: Free</h6>
+                          <a href="https://forms.gle/jHcXKDf5tSNLek386" className={`${styles.formlink}`} target='blank'>   <p> Register Here</p></a>
+                          <a href={realcricket_rulebook} className={`${styles.btnclass}`} download>
+                            Rulebook
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+               
                 </div>
                 {/* my try end*/}
                 <div className={`${styles.bottom}`}>
