@@ -56,7 +56,7 @@ const Fixtures = ({ selectedSport , selectedDate}) => {
               {/* | Round {data.round }*/}
             </div>
 
-            <div className="row3" style={{ color: 'black' }}>
+            <div className="row3" style={{ color: 'white' }}>
               <div className="row4">
                 {/* <div className="rectangle"></div> */}
                 {data.team1}
