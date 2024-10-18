@@ -93,6 +93,7 @@ p {
   width: 12.5rem;
   justify-content: center;
   justify-items: center;
+  color: white;
 }
 .Supreme {
   display: grid;

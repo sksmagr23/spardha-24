@@ -28,7 +28,7 @@ const Matches = () => {
     'Volleyball',
     'Weight Lifting',
   ];
-  const [selectedDate, setSelectedDate] = useState('2023-10-13'); 
+  const [selectedDate, setSelectedDate] = useState('2024-10-18'); 
   const [selectedSport, setSelectedSport] = useState('All');
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
